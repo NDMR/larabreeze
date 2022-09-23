@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'K UI') }}</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Fonts -->
     <link
@@ -19,7 +19,7 @@
             display: none;
         }
     </style>
-    
+
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -30,11 +30,11 @@
             <!-- Sidebar -->
             <x-sidebar.sidebar />
             <!-- Page Wrapper -->
-            <div class="flex flex-col min-h-screen" 
-                :class="{ 
+            <div class="flex flex-col min-h-screen"
+                :class="{
                     'lg:ml-64': isSidebarOpen,
                     'md:ml-16': !isSidebarOpen
-                }" 
+                }"
                 style="transition-property: margin; transition-duration: 150ms;"
             >
 
